@@ -1,0 +1,46 @@
+<html>
+<head>
+<script>
+var i=0;
+function exam()
+{
+if(document.f1.n1[0].checked)
+i=i+1;
+if(document.f1.n2[1].checked)
+i=i+1;
+if(document.f1.n3[2].checked)
+i=i+1;
+if(document.f1.n4[1].checked)
+i=i+1;
+if(document.f1.n5[0].checked)
+i=i+1;
+alert("Your score is"+i+"/5");
+}
+</script>
+</head>
+<body>
+<form name="f1">
+<h1><u> basic maths exam</u></h1>
+<h2>5 X 5</h2>
+<input type="radio" id="numb" name="n1" value="25">25
+<input type="radio" id="numb" name="n1" value="10">10
+<input type="radio" id="numb" name="n1" value="15">15
+<h2>10 / 2</h2>
+<input type="radio" id="numb1" name="n2" value="7">7
+<input type="radio" id="numb1" name="n2" value="5">5
+<input type="radio" id="numb1" name="n2" value="2">2
+<h2>5 + 5</h2>
+<input type="radio" id="numb2" name="n3" value="15">15
+<input type="radio" id="numb2" name="n3" value="5">5
+<input type="radio" id="numb2" name="n3" value="10">10
+<h2>10 - 5</h2>
+<input type="radio" id="numb3" name="n4" value="7">7
+<input type="radio" id="numb3" name="n4" value="5">5
+<input type="radio" id="numb3" name="n4" value="2">2
+<h2>10 % 3</h2>
+<input type="radio" id="numb4" name="n5" value="1">1
+<input type="radio" id="numb4" name="n5" value="3">3
+<input type="radio" id="numb4" name="n5" value="2">2
+<br><br><input type="submit" value="submit" onclick="exam()">
+</body>
+</html>

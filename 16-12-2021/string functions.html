@@ -1,0 +1,113 @@
+<html>
+<body>
+<script language="javascript" type="text/javascript">
+
+function len()
+{
+ var a=document.getElementById('a').value;
+var b=document.getElementById('b').value;
+var c=a.length;
+//document.getElementById('r').value=c;
+ document.write(c);
+ }
+ 
+ function slicing()
+{
+ var a=document.getElementById('a').value;
+var b=document.getElementById('b').value;
+var c=a.slice(3,5);
+document.getElementById('r').value=c;
+ //document.write(c);
+ }
+
+ function sub()
+{
+ var a=document.getElementById('a').value;
+var b=document.getElementById('b').value;
+var c=a.substr(3,2);
+document.getElementById('r').value=c;
+ //document.write(c);
+ }
+ 
+ function rep()
+{
+ var a=document.getElementById('a').value;
+var b=document.getElementById('b').value;
+var c=a.replace(b,"good");
+document.getElementById('r').value=c;
+ //document.write(c);
+ }
+ 
+ function tou()
+{
+ var a=document.getElementById('a').value;
+var b=document.getElementById('b').value;
+var c=a.toUpperCase();
+document.getElementById('r').value=c;
+// document.write(c);
+ }
+ 
+ function tol()
+{
+ var a=document.getElementById('a').value;
+var b=document.getElementById('b').value;
+var c=a.toLowerCase();
+document.getElementById('r').value=c;
+ //document.write(c);
+ }
+ 
+  function con()
+{
+ var a=document.getElementById('a').value;
+var b=document.getElementById('b').value;
+var c=a.concat("",b);
+document.getElementById('r').value=c;
+ //document.write(c);
+ }
+ 
+  function asc()
+{
+ var a=document.getElementById('a').value;
+var b=document.getElementById('b').value;
+var c=a.charCodeAt(0);
+document.getElementById('r').value=c;
+ //document.write(c);
+ }
+
+  function spl()
+{
+ var a=document.getElementById('a').value;
+var b=document.getElementById('b').value;
+var c=a.split(":");
+document.getElementById('r').value=c;
+ //document.write(c);
+ }
+ 
+ function loc()
+{
+ var a=document.getElementById('a').value;
+var b=document.getElementById('b').value;
+var c=a.search(b);
+document.getElementById('r').value=c;
+ //document.write(c);
+ }
+
+
+</script>
+<center><form>
+ENTER THE FIRST STRING <input type="text" id="a" name="a1"><br><br>
+ENTER THE SECOND STRING <input type="text" id="b" name="b1"><br><br>
+<button onclick="len()">length</button>
+<button onclick="slicing()">slice</button>
+<button onclick="sub()">substring</button>
+<button onclick="rep()">replace</button>
+<button onclick="tou()">to upper</button>
+<button onclick="tol()">to lower</button>
+<button onclick="con()">concatination</button>
+<button onclick="asc()">ascii</button>
+<button onclick="spl()">split</button>
+<button onclick="loc()">location</button><br><br>
+RESULT IS <input type="text" id='r' name="c1"><br><br>
+<!--input type="reset"--></form>
+</center></body>
+</html>

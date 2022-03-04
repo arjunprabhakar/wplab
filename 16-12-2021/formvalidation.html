@@ -1,0 +1,37 @@
+<html>
+<head>
+<script type="text/javascript">
+function validation(inputText)
+{
+if(document.getElementById("t1").value == "")
+alert("enter your name");
+else if(document.getElementById("t2").value == "")
+alert("enter a password");
+else if(document.getElementById("t2").value != document.getElementById("t3").value)
+alert(" enter correct password");
+else if(document.getElementById("t4").value == "")
+alert("enter your address");
+else
+alert("Form has been submitted");
+}
+</script>
+</head>
+<body>
+<table border = "1">
+<tr>
+<td>
+<h1>Registeration form</h1>
+<form name="form">
+username:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="t1"><br><br>
+password:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="t2"><br><br>
+confirm password:&nbsp;<input type="password" id="t3"><br><br>
+email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="t4"><br><br>
+Address:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<textarea rows="2" cols="10" id="t4"></textarea><br><br>
+<input type="button" value="Submit" onclick="validation(document.form.t4.value)">
+<input type="reset" value="Clear All">
+</form>
+</td>
+</tr>
+</table>
+</body>
+</html>
